@@ -1,30 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Awesomest Website</title>
-    </head>
-    <body>
-        <header>
-            <h1>Hello my name is <span>Jo Franchetti</span>.<br>
-             I am a web developer</h1>
-            <a href="#">Find out more</a>
-        </header>
-        <main>
-            <section>
-                <h2>About me</h2>
-                <div>
-                    <img src="jo.jpg" alt="a tabby cat with its head tilted to the side looking at the camera">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac sem dui. Vivamus fringilla eget enim sit amet ullamcorper. Duis fermentum sagittis lectus, nec elementum odio
-                    ullamcorper nec. Quisque id odio ligula. Duis placerat sollicitudin lacus at mattis. Morbi luctus aliquam ipsum non eleifend. Sed risus velit, sagittis nec fermentum ut, suscipit
+
+<head>
+    <title>My Awesomest Website</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Hello my name is <span class="h1-highlight">Jo Franchetti</span>.<br>
+            I am a web developer</h1>
+        <a href="#" class="button">Find out more</a>
+    </header>
+    <main>
+        <section class="about">
+            <h2>About me</h2>
+            <div class="about-container">
+                <img class="about-img" src="http://placekitten.com/2000/1000" alt="a tabby cat with its head tilted to the side looking at the camera">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac sem dui. Vivamus fringilla eget enim sit amet ullamcorper. Duis fermentum sagittis lectus,
+                    nec elementum odio
+                    ullamcorper nec. Quisque id odio ligula. Duis placerat sollicitudin lacus at mattis. Morbi luctus aliquam ipsum non eleifend. Sed risus velit, sagittis nec
+                    fermentum ut, suscipit
                     id turpis. Duis fringilla consectetur est, at cursus nibh tincidunt laoreet.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac sem dui. Vivamus fringilla eget enim sit amet ullamcorper. Duis fermentum sagittis lectus, nec elementum odio
-                    ullamcorper nec. Quisque id odio ligula. Duis placerat sollicitudin lacus at mattis. Morbi luctus aliquam ipsum non eleifend. Sed risus velit, sagittis nec fermentum ut,
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac sem dui. Vivamus fringilla eget enim sit amet ullamcorper. Duis fermentum sagittis lectus,
+                    nec elementum odio
+                    ullamcorper nec. Quisque id odio ligula. Duis placerat sollicitudin lacus at mattis. Morbi luctus aliquam ipsum non eleifend. Sed risus velit, sagittis nec
+                    fermentum ut,
                     suscipit
                     id turpis. Duis fringilla consectetur est, at cursus nibh tincidunt laoreet.</p>
-                    <a href="#">My Resume</a>
-                </div>
-            </section>
-        </main>
-    </body>
-</html>
+                <a href="#">My Resume</a>
+                <blockquote>
+                    "The frontendest of frontend developers"
+                    <cite>- Richard Westenra</cite>
+                </blockquote>
+            </div>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <article>
+                <h3>Project name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac sem dui. Vivamus fringilla eget enim sit amet ullamcorper. Duis fermentum sagittis lectus,
+                    nec elementum odio
+                    ullamcorper nec. Quisque id odio ligula.</p>
+                <a href="#">See it live</a>
+                <a href="#">Fork it on GitHub</a>
+                <img src="http://placekitten.com/200/100" alt="screenshot of project">
+            </article>
+            <article>
+                <h3>Project name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac sem dui. Vivamus fringilla eget enim sit amet ullamcorper. Duis fermentum sagittis lectus,
+                    nec elementum
+                    odio
+                    ullamcorper nec. Quisque id odio ligula.</p>
+                <a href="#">See it live</a>
+                <a href="#">Fork it on GitHub</a>
+                <img src="http://placekitten.com/200/100" alt="screenshot of project">
+            </article>
+            <article>
+                <h3>Project name</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac sem dui. Vivamus fringilla eget enim sit amet ullamcorper. Duis fermentum sagittis lectus,
+                    nec elementum
+                    odio
+                    ullamcorper nec. Quisque id odio ligula.</p>
+                <a href="#">See it live</a>
+                <a href="#">Fork it on GitHub</a>
+                <img src="http://placekitten.com/200/100" alt="screenshot of project">
+            </article>
+        </section>
+        <section>
+            <h2>Contact me</h2>
+            <p>If you'd like to work with me, please drop me a line using the form below</p>
+            <a href="#">Contact me</a>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/jofranchetti/">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/thisisjofrank">Twitter</a>
+            </li>
+            <li>
+                <a href="https://github.com/thisisjofrank">GitHub</a>
+            </li>
+            <li>
+                <a href="https://youtube.com/something">YouTube</a>
+            </li>
+        </ul>
+        <p>&copy; Copyright Jo Franchetti 2022</p>
+    </footer>
+</body>
 
+</html>

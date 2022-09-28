@@ -1,0 +1,64 @@
+:root {
+    --primary: #ff5094;
+    --spacing: 2em;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing);
+}
+
+h1 {
+    margin-bottom: var(--spacing);
+    font-size: clamp(2em, 5vw, 100px);
+    font-weight: bold;
+    line-height: 1.4em;
+}
+
+h2 {
+    margin-bottom: var(--spacing);
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 1em;
+    line-height: 1.4em;
+}
+
+.h1-highlight {
+    color: var(--primary);
+}
+
+.button {
+    padding: 1em;
+    border: 2px solid var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.about {
+    padding: var(--spacing);
+    background-color: var(--primary);
+    color: white;
+}
+
+.about-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.about-img {
+    max-width: 350px;
+}
