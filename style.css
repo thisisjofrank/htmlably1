@@ -1,6 +1,6 @@
 :root {
     --primary: #ff5094;
-    --spacing: 2em;
+    --spacing: 4em;
 }
 
 body {
@@ -17,18 +17,24 @@ header {
 }
 
 h1 {
-    margin-bottom: var(--spacing);
+    margin-bottom: 1em;
     font-size: clamp(2em, 5vw, 100px);
     font-weight: bold;
     line-height: 1.4em;
 }
 
 h2 {
-    margin-bottom: var(--spacing);
+    margin-bottom: 1em;
     text-align: center;
     font-size: 3vw;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 p {
@@ -36,22 +42,68 @@ p {
     line-height: 1.4em;
 }
 
+blockquote {
+    margin-top: var(--spacing);
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+}
+
+cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-style: normal;
+}
+
+section {
+    padding: var(--spacing);
+}
+
+article {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 960px;
+    margin: 0 auto var(--spacing);
+}
+
+footer {
+    padding: var(--spacing);
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.primary-theme {
+    background-color: var(--primary);
+    color: white;
+    --button-color: white;
+    --button-hover-color: var(--primary);
+}
+
+.neutral-theme {
+    background-color: white;
+    --button-color: var(--primary);
+    --button-hover-color: white;
+}
+
 .h1-highlight {
     color: var(--primary);
 }
 
 .button {
+    display: inline-block;
+    margin-top: 1rem;
     padding: 1em;
-    border: 2px solid var(--primary);
+    border: 2px solid var(--button-color);
     font-weight: bold;
     text-decoration: none;
-    color: var(--primary);
+    color: var(--button-color);
 }
 
-.about {
-    padding: var(--spacing);
-    background-color: var(--primary);
-    color: white;
+.button:hover {
+    color: var(--button-hover-color);
+    background-color: var(--button-color);
 }
 
 .about-container {
@@ -60,5 +112,82 @@ p {
 }
 
 .about-img {
+    display: block;
     max-width: 350px;
+    margin: 0 auto var(--spacing);
+    filter: grayscale(100%);
+   transition: all 0.3s ease-in-out;
+}
+
+.about-img:hover {
+    filter: grayscale(0%);
+}
+
+.article-img {
+    margin-bottom: 1rem;
+}
+
+.contact {
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--spacing);
+}
+
+.social-item {
+    margin: 0 2rem;
+}
+
+.social-link {
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: transparent;
+    background: no-repeat;
+    background-size: 60px;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.linkedin {
+    background-image: url(https://cdn.glitch.com/eff407bc-3fed-446b-ab3f-4ec6f216531a%2Flinkedin.svg?v=1630326267211);
+}
+
+.twitter {
+    background-image: url(https://cdn.glitch.com/eff407bc-3fed-446b-ab3f-4ec6f216531a%2Ftwitter.svg?v=1630326267072);
+}
+
+.github {
+    background-image: url(https://cdn.glitch.com/eff407bc-3fed-446b-ab3f-4ec6f216531a%2Fgithub.svg?v=1630326266914);
+}
+
+.youtube {
+    background-image: url(https://cdn.glitch.com/eff407bc-3fed-446b-ab3f-4ec6f216531a%2Fyoutube.svg?v=1630326266914);
+}
+
+@media (min-width: 800px) {
+    .about-container {
+        display: flex;
+    }
+
+    .about-info {
+        margin-left: var(--spacing)
+    }
+
+    article {
+        flex-direction: row;
+    }
+
+    .article-img {
+        margin-left: var(--spacing);
+        max-width: 350px;
+        object-fit: cover;
+    }
 }
